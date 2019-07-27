@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .borders{
+        	border: 1px solid blue;
+        	width: 200px;
+        	height: 230px;
+        	float: left;
+        	padding-left: 10px;
+    		padding-right: 10px;
+        }
+        img{
+        	width: 200px;
+        	height: 200px;
+       	}
+       	span{
+       		height:10px
+       	}
+       	.hallo{
+       	border: 1px solid black;
+       	}
+       	#age{
+       		width:100px
+       	}
+       	
+       	button { /* 按钮美化 */
+			width: 270px; /* 宽度 */
+			height: 40px; /* 高度 */
+			border-width: 0px; /* 边框宽度 */
+			border-radius: 3px; /* 边框半径 */
+			background: #1E90FF; /* 背景颜色 */
+			cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+			outline: none; /* 不显示轮廓线 */
+			font-family: Microsoft YaHei; /* 设置字体 */
+			color: white; /* 字体颜色 */
+			font-size: 17px; /* 字体大小 */
+		}
+		button:hover { /* 鼠标移入按钮范围时改变颜色 */
+			background: #5599FF;
+		}
+    </style>
+  <script type="text/javascript" src="./jquery-3.3.1.min.js" ></script>
+    <script>
+		function jisuan(){
+		  var sum =0;
+			for(var i=1;i<17;i++){
+			  var a = "long"+i;
+        var b = "width"+i;
+        var c = "high"+i;
+        var d = "num" + i;
+				if($("#"+a).val()!=0&&$("#"+b).val()!=0&&$("#"+c).val()!=0&&$("#"+d).val()!=0){
+          sum += $("#"+a).val()*$("#"+b).val()*$("#"+c).val()*$("#"+d).val();
+        }
+			}
+      for(var i=1;i<7;i++){
+        var a = "slong"+i;
+        var b = "swidth"+i;
+        var c = "shigh"+i;
+        var d = "snum" + i;
+        if($("#"+a).val()!=0&&$("#"+b).val()!=0&&$("#"+c).val()!=0&&$("#"+d).val()!=0){
+          sum += $("#"+a).val()*$("#"+b).val()*$("#"+c).val()*$("#"+d).val()/2;
+        }
+      }
+			$("#age").html(sum);
+		}
+    // $("button").click(function(){
+    //   var sum =0;
+    //   for(var i=0;i<6;i++){
+    //     var a = "long"+i;
+    //     var b = "width"+i;
+    //     var c = "high"+i;
+    //     if($("input[id=a]").val()!=0&&$("input[id=b]").val()!=0&&$("input[id=c]").val()!=0){
+    //       sum += $("input[id=a]").val()*$("input[id=b]").val()*$("input[id=c]").val()
+    //     }
+    //   }
+    //   $("#age").html(sum);
+    // });
+    </script>
+    <title>王族</title>
+</head>
+<body>
+    <script>
+    // if(!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    //     window.location.href = "./index1.html";
+    // }
+   
+    </script>
+    <h1>王氏混泥土计算器</h1>
+     <a href="http://www.wangzhong.site/qiangmian.html">计算墙面</a>
+    <div class="hallo">   柱形1 <br/>
+    <span>柱长:</span><input type="text" id="long1"></input>m<br/>
+    <span>柱宽:</span><input type="text" id="width1"></input>m<br/>
+    <span>柱高:</span><input type="text" id="high1"></input>m<br/>
+    <span>数量:</span><input type="text" id="num1"></input>个<br/></div>
+    <div class="hallo">  柱形2<br/>
+    <span>柱长:</span><input type="text" id="long2"></input>m<br/>
+    <span>柱宽:</span><input type="text" id="width2"></input>m<br/>
+    <span>柱高:</span><input type="text" id="high2"></input>m<br/>
+      <span>数量:</span><input type="text" id="num2"></input>个<br/></div>
+    <div class="hallo"> 柱形3<br/>
+    <span>柱长:</span><input type="text" id="long3"></input>m<br/>
+    <span>柱宽:</span><input type="text" id="width3"></input>m<br/>
+    <span>柱高:</span><input type="text" id="high3"></input>m<br/>
+      <span>数量:</span><input type="text" id="num3"></input>个<br/></div>
+    <div class="hallo">  柱形4<br/>
+   <span>柱长:</span><input type="text" id="long4"></input>m<br/>
+    <span>柱宽:</span><input type="text" id="width4"></input>m<br/>
+    <span>柱高:</span><input type="text" id="high4"></input>m<br/>
+      <span>数量:</span><input type="text" id="num4"></input>个<br/></div>
+   <div class="hallo">   柱形5<br/>
+    <span>柱长:</span><input type="text" id="long5"></input>m<br/>
+    <span>柱宽:</span><input type="text" id="width5"></input>m<br/>
+    <span>柱高:</span><input type="text" id="high5"></input>m<br/>
+     <span>数量:</span><input type="text" id="num5"></input>个<br/></div>
+   <div class="hallo">   柱形6<br/>
+    <span>柱长:</span><input type="text" id="long6"></input>m<br/>
+    <span>柱宽:</span><input type="text" id="width6"></input>m<br/>
+    <span>柱高:</span><input type="text" id="high6"></input>m<br/>
+     <span>数量:</span><input type="text" id="num6"></input>个<br/></div>
+<!-- ------------------------------------------------------------------------- -->
+    <br>
+    <div class="hallo">   剪力墙1 <br/>
+      <span>墙长:</span><input type="text" id="long7"></input>m<br/>
+      <span>墙宽:</span><input type="text" id="width7"></input>m<br/>
+      <span>墙高:</span><input type="text" id="high7"></input>m<br/>
+      <span>数量:</span><input type="text" id="num7"></input>个<br/></div>
+    <div class="hallo">  剪力墙2<br/>
+      <span>墙长:</span><input type="text" id="long8"></input>m<br/>
+      <span>墙宽:</span><input type="text" id="width8"></input>m<br/>
+      <span>墙高:</span><input type="text" id="high8"></input>m<br/>
+      <span>墙量:</span><input type="text" id="num8"></input>个<br/></div>
+    <div class="hallo"> 剪力墙3<br/>
+      <span>墙长:</span><input type="text" id="long9"></input>m<br/>
+      <span>墙宽:</span><input type="text" id="width9"></input>m<br/>
+      <span>墙高:</span><input type="text" id="high9"></input>m<br/>
+      <span>数量:</span><input type="text" id="num9"></input>个<br/></div>
+    <div class="hallo">  剪力墙4<br/>
+      <span>墙长:</span><input type="text" id="long10"></input>m<br/>
+      <span>墙宽:</span><input type="text" id="width10"></input>m<br/>
+      <span>墙高:</span><input type="text" id="high10"></input>m<br/>
+      <span>数量:</span><input type="text" id="num10"></input>个<br/></div>
+    <div class="hallo">   剪力墙5<br/>
+      <span>墙长:</span><input type="text" id="long11"></input>m<br/>
+      <span>墙宽:</span><input type="text" id="width11"></input>m<br/>
+      <span>墙高:</span><input type="text" id="high11"></input>m<br/>
+      <span>数量:</span><input type="text" id="num11"></input>个<br/></div>
+    <div class="hallo">   剪力墙6<br/>
+      <span>墙长:</span><input type="text" id="long12"></input>m<br/>
+      <span>墙宽:</span><input type="text" id="width12"></input>m<br/>
+      <span>墙高:</span><input type="text" id="high12"></input>m<br/>
+      <span>数量:</span><input type="text" id="num12"></input>个<br/></div>
+    <br>
+    <div class="hallo">   地板1<br/>
+      <span>板长:</span><input type="text" id="long13"></input>m<br/>
+      <span>板宽:</span><input type="text" id="width13"></input>m<br/>
+      <span>板高:</span><input type="text" id="high13"></input>m<br/>
+      <span>数量:</span><input type="text" id="num13"></input>个<br/></div>
+    <div class="hallo">   地板2<br/>
+      <span>板长:</span><input type="text" id="long14"></input>m<br/>
+      <span>板宽:</span><input type="text" id="width14"></input>m<br/>
+      <span>板高:</span><input type="text" id="high14"></input>m<br/>
+      <span>数量:</span><input type="text" id="num14"></input>个<br/></div>
+    <div class="hallo">   地板3<br/>
+      <span>板长:</span><input type="text" id="long15"></input>m<br/>
+      <span>板宽:</span><input type="text" id="width15"></input>m<br/>
+      <span>板高:</span><input type="text" id="high15"></input>m<br/>
+      <span>数量:</span><input type="text" id="num15"></input>个<br/></div>
+    <div class="hallo">   地板4<br/>
+      <span>板长:</span><input type="text" id="long16"></input>m<br/>
+      <span>板宽:</span><input type="text" id="width16"></input>m<br/>
+      <span>板高:</span><input type="text" id="high16"></input>m<br/>
+      <span>数量:</span><input type="text" id="num16"></input>个<br/></div>
+    <br>
+    <div class="hallo">   三角柱形1 <br/>
+      <span>柱长:</span><input type="text" id="slong1"></input>m<br/>
+      <span>柱宽:</span><input type="text" id="swidth1"></input>m<br/>
+      <span>柱高:</span><input type="text" id="shigh1"></input>m<br/>
+      <span>数量:</span><input type="text" id="snum1"></input>个<br/></div>
+    <div class="hallo">  三角柱形2<br/>
+      <span>柱长:</span><input type="text" id="slong2"></input>m<br/>
+      <span>柱宽:</span><input type="text" id="swidth2"></input>m<br/>
+      <span>柱高:</span><input type="text" id="shigh2"></input>m<br/>
+      <span>数量:</span><input type="text" id="snum2"></input>个<br/></div>
+    <div class="hallo"> 三角柱形3<br/>
+      <span>柱长:</span><input type="text" id="slong3"></input>m<br/>
+      <span>柱宽:</span><input type="text" id="swidth3"></input>m<br/>
+      <span>柱高:</span><input type="text" id="shigh3"></input>m<br/>
+      <span>数量:</span><input type="text" id="snum3"></input>个<br/></div>
+    <div class="hallo">  三角柱形4<br/>
+      <span>柱长:</span><input type="text" id="slong4"></input>m<br/>
+      <span>柱宽:</span><input type="text" id="swidth4"></input>m<br/>
+      <span>柱高:</span><input type="text" id="shigh4"></input>m<br/>
+      <span>数量:</span><input type="text" id="snum4"></input>个<br/></div>
+    <div class="hallo">   三角柱形5<br/>
+      <span>柱长:</span><input type="text" id="slong5"></input>m<br/>
+      <span>柱宽:</span><input type="text" id="swidth5"></input>m<br/>
+      <span>柱高:</span><input type="text" id="shigh5"></input>m<br/>
+      <span>数量:</span><input type="text" id="snum5"></input>个<br/></div>
+    <div class="hallo">   三角柱形6<br/>
+      <span>柱长:</span><input type="text" id="slong6"></input>m<br/>
+      <span>柱宽:</span><input type="text" id="swidth6"></input>m<br/>
+      <span>柱高:</span><input type="text" id="shigh6"></input>m<br/>
+      <span>数量:</span><input type="text" id="snum6"></input>个<br/></div>
+    <button onclick="jisuan()">计算总面积</button><br/>
+    总体积<span id="age"></span>立方米
+</body>
+</html>
